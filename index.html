@@ -5,19 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سجاد طوسی - Portfolio</title>
+    <!-- این را در <head> اضافه کنید -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/iransans@v5.2.0/fontface.css" rel="stylesheet" type="text/css" />
     <style>
-        @font-face {
-            font-family: iransans;
-            src: url(WebFonts/fonts/woff2/IRANSansWeb.woff2) format(woff2);
+        
+           @font-face {
+        font-family: 'IRANSans';
+        src: url('WebFonts/fonts/woff2/IRANSansWeb.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
         }
+    
         @font-face {
-            font-family: iransans;
-            src: url(WebFonts/fonts/woff/IRANSansWeb.woff) format(woff);
+        font-family: 'IRANSans';
+        src: url('WebFonts/fonts/woff/IRANSansWeb.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
         }
+    
         @font-face {
-            font-family: iransans;
-            src: url(WebFonts/fonts/ttf/IRANSansWeb.ttf) format(ttf);
-        }
+        font-family: 'IRANSans';
+        src: url('WebFonts/fonts/ttf/IRANSansWeb.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+        }    
         
         
         * {
@@ -37,15 +52,15 @@
 
         
         body {
-            font-family: iransans;
+           font-family: Vazirmatn, -apple-system, BlinkMacSystemFont, tahoma, sans-serif;
             background-color: var(--dark-bg);
             color: var(--text-white);
             overflow-x: hidden;
         }
         
         .font-display {
-            font-family: 'iransans';
-        }
+            font-family: 'IRANSans', tahoma, sans-serif;
+            }
         
         /* Header / Navigation */
         header {
