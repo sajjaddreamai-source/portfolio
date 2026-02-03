@@ -1,6 +1,7 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://sajjadtoosi.netlify.app/sitemap.xml
+
 
 
