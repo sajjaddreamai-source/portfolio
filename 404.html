@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه پیدا نشد - سجاد طوسی</title>
+    <meta name="description" content="صفحه مورد نظر یافت نشد. بازگشت به صفحه اصلی سایت سجاد طوسی.">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .not-found {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 1.5rem 3rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
+        }
+
+        .not-found-card {
+            max-width: 640px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .not-found-code {
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 1;
+            color: var(--primary-orange);
+            margin-bottom: 1rem;
+        }
+
+        .not-found-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-white);
+        }
+
+        .not-found-desc {
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .not-found-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .not-found-actions a {
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .not-found-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .not-found-code {
+                font-size: 4rem;
+            }
+
+            .not-found-title {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- صفحه 404 -->
+    <section class="not-found">
+        <div class="not-found-card">
+            <div class="not-found-code">404</div>
+            <h1 class="not-found-title">صفحه مورد نظر پیدا نشد</h1>
+            <p class="not-found-desc">
+                آدرسی که وارد کردید وجود ندارد یا منتقل شده است.
+                می‌توانید به صفحه اصلی برگردید یا با من تماس بگیرید.
+            </p>
+            <div class="not-found-actions">
+                <a href="index.html" class="cta-btn">بازگشت به صفحه اصلی</a>
+                <a href="index.html#contact" class="cta-btn">ارتباط با من</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
