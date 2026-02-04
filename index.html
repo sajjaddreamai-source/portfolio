@@ -66,7 +66,8 @@
             position: absolute;
             opacity: 0.6;
             filter: blur(2px);
-            animation: float 20s infinite ease-in-out, glowPulse 4s infinite ease-in-out;
+            animation: float 20s infinite ease-in-out, glowPulse 6s infinite ease-in-out;
+            will-change: transform;
             z-index: 1;
         }
 
@@ -144,9 +145,30 @@
             }
         }
 
+        @media (max-width: 1024px) {
+            .shape {
+                animation: float 26s infinite linear;
+                filter: blur(1px);
+                box-shadow: none;
+            }
+        }
+
         @media (max-width: 768px) {
-            .shape:nth-child(n+8) { display: none; }
-            .shape { opacity: 0.4; }
+            .shape:nth-child(n+6) { display: none; }
+            .shape {
+                animation: none;
+                filter: none;
+                box-shadow: none;
+                opacity: 0.25;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .shape {
+                animation: none;
+                filter: none;
+                box-shadow: none;
+            }
         }
     </style>
 </head>

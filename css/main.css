@@ -4,6 +4,18 @@
     src: url(../WebFonts/fonts/woff2/IRANSansWeb.woff2) format('woff2');
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .shape,
+    .logo span,
+    .cta-btn,
+    .phone-icon,
+    .service-icon,
+    .home-bg .home-orb {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
 @font-face {
     font-family: iransans;
     src: url(../WebFonts/fonts/woff/IRANSansWeb.woff) format('woff');
@@ -403,6 +415,7 @@ nav {
     opacity: 0.6;
     filter: blur(2px);
     animation: float 20s infinite ease-in-out;
+    will-change: transform;
     z-index: 1;
 }
 
@@ -623,7 +636,7 @@ nav {
 }
 
 .shape {
-    animation: float 20s infinite ease-in-out, glowPulse 4s infinite ease-in-out;
+    animation: float 20s infinite ease-in-out, glowPulse 6s infinite ease-in-out;
 }
 
 /* بخش خدمات */
@@ -1178,6 +1191,12 @@ footer {
         border-radius: 10px;
     }
 
+    .shape {
+        animation: float 26s infinite linear;
+        filter: blur(1px);
+        box-shadow: none;
+    }
+
     /* اطمینان از خوانایی دکمه ارسال در فرم تماس */
     .contact .cta-btn {
         background: var(--primary-orange);
@@ -1412,11 +1431,14 @@ footer {
     }
 
     /* کاهش تعداد شکل‌ها در موبایل */
-    .shape:nth-child(n+8) {
+    .shape:nth-child(n+6) {
         display: none;
     }
 
     .shape {
-        opacity: 0.4;
+        animation: none;
+        filter: none;
+        box-shadow: none;
+        opacity: 0.25;
     }
 }
